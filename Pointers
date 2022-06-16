@@ -1,0 +1,50 @@
+///////////////////////// Pointers//////////////////////////////////
+
+Address typecastingg
+
+
+Why do we need to give pointers different data type rather than Pointers itself??
+--   As pointer will go to the stored address to dereference the value it will need the data type to bring correct value .
+
+e.g   int a  =5
+      int *p = &a;
+      
+      
+      p will go to address of a and will look fo 4 bytes as it is given in int;
+      *p = 5;
+      otherwise it would have  been different .
+      
+      
+      
+      /////////// typecassting ////////////
+      
+      
+      Implicit and explicit typecasting.
+      
+      
+      int a   =4;
+      char b = a;
+      This will do implicit typecassting and cout <<b;
+      will print in terms of char;
+      but ..
+      
+      in pointers
+      
+     int *a = &i;
+     char * p = a;
+     this won't help,and will give error;
+     
+     
+    -- char *p = (char*)a;
+    
+    
+    we need to do explicit typecasting , to get desired results;
+    
+    In above examaple , 
+    cout << a <<endl;
+    will print  address of i but
+    cout << p << endl;
+    will print the first char of given address and then it will print till it finds null character in the given address;
+    
+    
+     
