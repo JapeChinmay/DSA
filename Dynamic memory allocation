@@ -1,0 +1,69 @@
+int a [10];
+int i = 10;
+
+
+this is stack memory and creates still memory in the system .
+It will not allow dynamic adjustments to the  memory.
+
+when 
+int n;
+cin>> n;
+int a[n];
+
+is done this gives a problem , as you are trying to create memory at runtime.
+
+
+//////////////////////dynamic allocation ////////////////////////
+
+
+int * p = new int ;
+
+here new keyword holds the address of the int created in HEAP memory and gives to the p pointer;
+
+
+we can also do,,
+int n;
+cin >> n;
+
+int * p  = new int[n];
+
+-> you can adjust the size of an array at runtime;
+
+
+
+**  You have to delete dynamic memory you create . it does not end after the scop ends;
+
+
+while(true)
+{
+    int i  =10101;
+    
+    
+    }
+    
+    
+    this will erase the earlier memoy of iteration on the  next one;;
+    
+    
+    but 
+    
+    
+    
+    while(true) {
+    
+    
+   int * p  = new int;
+   }
+   
+   this will not delete the memory of previous iteration.
+   
+   you need to do  'delete p;' to erase dynamically allocated memory. this is not deleting p but the memory p is addressing.
+   
+   ** in terms of an array we need to write delete [] p ;
+   
+   
+   
+   
+   
+
+
