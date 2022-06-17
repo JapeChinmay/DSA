@@ -1,0 +1,29 @@
+
+Creating 2D array .. 
+
+Here we can create dynamic array where each position is array itself
+
+
+i.e ->
+
+cin >> m >> n;
+
+int ** p = new int*[m];
+for(int i =0;i<m;i++)
+{
+    p[i] = new int*[n];
+    
+    for(int j =0;j<n;j++)
+    {  p[i][j];
+    
+    }
+    
+    here we are creating array of array first 
+    which is of size m;
+    
+    then we are allocating size of each array which is size n;
+    
+    then in each array of size n we are putting elements
+    
+    
+    
