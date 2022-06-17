@@ -1,0 +1,68 @@
+int i  = 10;
+int j =  i;
+
+
+i ++ 
+
+
+cout << i << endl;
+ -> 11;
+ 
+ 
+ cout << j << endl;
+ -> 10;
+ 
+ 
+here, i and j share the  same memories , when "i" was created it gave it a memory and an address and  at int j = i ; j was given different memory to store value of i;
+
+
+but if we create j as reference variable then , 
+
+int i = 10;
+int &j = i;
+then j won't be given different memeory to sstore value ..
+
+it will share same memory with i;
+
+so i++ will also affect j;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+we can do :  
+int i;
+i = 10;
+
+
+but :
+int &j;
+ j = i;
+ 
+ this can not be done , reference variable should be given value while creating them.
+ 
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+ e.g  - 
+ 
+ void increment(int n) {
+ 
+ n++
+ 
+}
+
+
+
+int main()
+
+{
+    int i  =10;
+    cout << i << endl;
+    
+    
+    this will print i but not incremented , as int n and i share different addresses , but if we pass n as & n then it will share same address.
+    
+ *************
+ 
+ 
+ Do not perform return by eference and fucntion .
+ 
