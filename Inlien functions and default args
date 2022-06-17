@@ -1,0 +1,87 @@
+#include<iostream>
+
+
+using namespace std;
+
+
+inline void hehe1(int const &k)
+{
+    cout << k << endl;
+
+
+}
+inline void hehe(int &k)
+{
+    k++;
+    hehe1(k);
+
+
+}
+int main()
+
+{
+    int a =10;
+    hehe(a);
+    cout << a << endl;
+
+
+}
+
+Here to make performance good and readable and also making code time complexity good , we are using inline functions ... 
+this makes function body to be executed to the function call place. 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+#include<iostream>
+
+
+using namespace std;
+
+
+
+
+ int  hehe(int a[], int size, int si = 11)
+
+
+{
+    int ans = 0;
+
+    for(int i = si;i< size;i++)
+    {
+        ans  += a[i];
+
+
+
+    }
+    return ans;
+
+
+
+}
+int main()
+
+{
+    int * a = new int[12];
+
+    for(int i=0;i<12;i++)
+    {
+        cin >> a[i];
+
+    }
+
+
+
+    cout << hehe(a, 12)<< endl;
+
+
+
+
+
+
+}
+
+here we are not passing the third value in the function , but default arg is set in the function , this is when user is not giving value 
+we can set default arg to the values in function , from right most to the left most , this order is compulsory,
